@@ -1,0 +1,174 @@
+</main>
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-16 mt-12 border-t border-slate-900">
+      <div class="max-w-7xl mx-auto px-8 grid gap-10 lg:grid-cols-4">
+        <div class="space-y-5">
+          <a class="inline-flex items-center gap-3" href="#">
+            <img
+              class="h-10 w-10 rounded-2xl bg-white object-contain p-1"
+              src="assets/bosco-logo.png"
+              alt="Boscosoft logo"
+            />
+            <span class="text-2xl font-bold text-white">Boscosoft</span>
+          </a>
+          <p class="max-w-[22rem] text-sm leading-6 text-slate-500">
+            Boscosoft Technologies delivers Dynamics 365 solutions designed to
+            streamline operations, improve customer engagement, and scale growth
+            across industries.
+          </p>
+          <div class="flex items-center gap-3">
+            <a
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 shadow-sm text-slate-400 hover:text-white transition-colors"
+              href="#"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 shadow-sm text-slate-400 hover:text-white transition-colors"
+              href="#"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 shadow-sm text-slate-400 hover:text-white transition-colors"
+              href="#"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-5">Quick Links</h3>
+          <ul class="space-y-3 text-sm text-slate-400">
+            <li>
+              <a class="hover:text-violet-400 transition-colors" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-violet-400 transition-colors" href="about.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-violet-400 transition-colors"
+                href="services.html">
+              Services</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-violet-400 transition-colors"
+                href="industries.html">
+              Industries</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-violet-400 transition-colors" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-5">
+            Our Solutions
+          </h3>
+          <ul class="space-y-3 text-sm text-slate-400">
+            <li>
+              <a class="hover:text-violet-400 transition-colors" href="#"
+                >Dynamics 365 CRM</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-violet-400 transition-colors" href="#"
+                >Power Platform</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-violet-400 transition-colors" href="#"
+                >Automation & Integration</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-violet-400 transition-colors" href="#"
+                >Analytics & AI</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-violet-400 transition-colors" href="#"
+                >Support & Training</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-5">Contact Info</h3>
+          <ul class="space-y-4 text-sm text-slate-400">
+            <li class="flex items-center gap-3">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-violet-900/40 text-violet-300">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <span>+91 98765 43210</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-violet-900/40 text-violet-300">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <span>info@boscosofttech.com</span>
+            </li>
+            <li class="mt-6">
+              <a href="#" class="inline-flex items-center gap-2 text-violet-400 hover:text-violet-300 font-semibold transition-colors">
+                Reach out to us <i class="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="border-t border-white/10 px-8 py-6 mt-12 text-center text-xs text-slate-500 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between"
+      >
+        <p>© 2026 Boscosoft Technologies. All rights reserved.</p>
+        <div class="flex gap-4 mt-4 md:mt-0">
+          <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+      });
+      const navToggle = document.getElementById("nav-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileBackdrop = document.getElementById("mobile-backdrop");
+      const mobileClose = document.getElementById("mobile-close");
+      const siteNav = document.getElementById("site-nav");
+
+      const setNavState = () => {
+        if (!siteNav) return;
+        siteNav.classList.toggle("nav-solid", window.scrollY > 16);
+      };
+
+      setNavState();
+      window.addEventListener("scroll", setNavState, { passive: true });
+
+      if (navToggle && mobileMenu) {
+        navToggle.addEventListener("click", () =>
+          mobileMenu.classList.toggle("hidden"),
+        );
+      }
+      if (mobileBackdrop && mobileMenu) {
+        mobileBackdrop.addEventListener("click", () =>
+          mobileMenu.classList.add("hidden"),
+        );
+      }
+      if (mobileClose && mobileMenu) {
+        mobileClose.addEventListener("click", () =>
+          mobileMenu.classList.add("hidden"),
+        );
+      }
+    </script>
+  </body>
+</html>

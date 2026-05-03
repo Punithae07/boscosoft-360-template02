@@ -1,0 +1,773 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Boscosoft Technologies | Dynamics 365 CRM Solutions</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed": "#1c1b22",
+              "outline-variant": "#cac4d4",
+              "surface-container": "#f4eaff",
+              "on-background": "#1e182b",
+              "surface-container-low": "#f9f1ff",
+              "on-primary": "#ffffff",
+              "primary-container": "#311081",
+              "on-surface": "#1e182b",
+              "on-tertiary": "#ffffff",
+              "primary-fixed": "#e7deff",
+              "tertiary-fixed-dim": "#c0c1ff",
+              "secondary-container": "#e0dbe6",
+              "on-tertiary-fixed-variant": "#2f2ebe",
+              "surface-variant": "#e9def9",
+              primary: "#1b0057",
+              "secondary-fixed-dim": "#c9c5cf",
+              "on-tertiary-fixed": "#07006c",
+              "primary-fixed-dim": "#ccbeff",
+              "error-container": "#ffdad6",
+              "on-secondary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-tertiary-container": "#8488ff",
+              surface: "#fef7ff",
+              "on-secondary-container": "#625f69",
+              "surface-tint": "#644cb5",
+              "surface-container-high": "#efe3ff",
+              tertiary: "#050063",
+              "on-surface-variant": "#484552",
+              secondary: "#5f5d66",
+              "inverse-surface": "#342d41",
+              "surface-bright": "#fef7ff",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-container": "#9b84f0",
+              "surface-dim": "#e0d5f0",
+              error: "#ba1a1a",
+              "secondary-fixed": "#e5e1eb",
+              "on-secondary-fixed-variant": "#48464e",
+              "tertiary-fixed": "#e1e0ff",
+              "inverse-primary": "#ccbeff",
+              "on-primary-fixed": "#1f0060",
+              "inverse-on-surface": "#f6edff",
+              outline: "#797583",
+              "tertiary-container": "#0f009f",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#4c339c",
+              background: "#fef7ff",
+              "surface-container-highest": "#e9def9",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "margin-desktop": "48px",
+              "stack-xs": "4px",
+              "margin-mobile": "16px",
+              "stack-xl": "64px",
+              unit: "8px",
+              gutter: "24px",
+              "stack-md": "16px",
+              "container-max": "1280px",
+            },
+            fontFamily: {
+              "body-lg": ["Inter"],
+              caption: ["Inter"],
+              "body-md": ["Inter"],
+              "label-md": ["Inter"],
+              "headline-lg": ["Manrope"],
+              "headline-md": ["Manrope"],
+              "display-xl": ["Manrope"],
+              manrope: ["Manrope"],
+            },
+            fontSize: {
+              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+              caption: ["12px", { lineHeight: "16px", fontWeight: "500" }],
+              "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-lg": [
+                "40px",
+                {
+                  lineHeight: "48px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-md": [
+                "32px",
+                { lineHeight: "40px", fontWeight: "600" },
+              ],
+              "display-xl": [
+                "64px",
+                {
+                  lineHeight: "72px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        border: 1px solid #f6f1fc;
+        box-shadow: 0 10px 40px -10px rgba(100, 76, 181, 0.05);
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+
+      .shimmer-bg {
+        background: linear-gradient(
+          90deg,
+          rgba(231, 222, 255, 0) 0%,
+          rgba(231, 222, 255, 0.3) 50%,
+          rgba(231, 222, 255, 0) 100%
+        );
+        background-size: 200% 100%;
+      }
+
+      .animate-float {
+        animation: float 8s ease-in-out infinite;
+      }
+
+      .animate-float-slow {
+        animation: float 11s ease-in-out infinite;
+      }
+
+      .animate-fade-up {
+        animation: fadeUp 0.8s ease both;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+
+        50% {
+          transform: translateY(-12px);
+        }
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.58);
+        backdrop-filter: blur(24px);
+        border: 1px solid rgba(255, 255, 255, 0.74);
+        box-shadow:
+          0 18px 54px rgba(67, 56, 132, 0.16),
+          inset 0 1px 0 rgba(255, 255, 255, 0.72);
+        transition:
+          background 0.3s ease,
+          box-shadow 0.3s ease,
+          transform 0.3s ease;
+      }
+
+      .nav-solid .glass-nav {
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 16px 42px rgba(53, 45, 112, 0.18);
+      }
+
+      .glass-mega-menu {
+        background: rgba(255, 255, 255, 0.78);
+        backdrop-filter: blur(26px);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        box-shadow:
+          0 24px 70px rgba(80, 71, 151, 0.2),
+          inset 0 0 30px rgba(255, 255, 255, 0.4);
+      }
+
+      .nav-backdrop {
+        background: rgba(15, 23, 42, 0.3);
+        backdrop-filter: blur(10px);
+      }
+
+      .mega-menu {
+        min-width: 900px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      /* Invisible bridge to prevent hover loss */
+      .mega-menu::before {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 0;
+        right: 0;
+        height: 30px;
+      }
+
+      .mega-shell:hover .mega-menu,
+      .mega-shell:focus-within .mega-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+        pointer-events: auto;
+      }
+
+      .hero-grid {
+        background-image:
+          linear-gradient(rgba(99, 102, 241, 0.08) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(99, 102, 241, 0.08) 1px, transparent 1px);
+        background-size: 54px 54px;
+        mask-image: linear-gradient(to bottom, black, transparent 82%);
+      }
+
+      .abstract-block {
+        transform: rotateX(58deg) rotateZ(-36deg);
+        transform-style: preserve-3d;
+      }
+
+      .abstract-block > div {
+        box-shadow: 20px 26px 42px rgba(67, 56, 132, 0.18);
+      }
+
+      .eyebrow-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 9999px;
+        border: 1px solid rgba(255, 255, 255, 0.72);
+        background: rgba(255, 255, 255, 0.62);
+        padding: 0.5rem 1rem;
+        color: #334155;
+        box-shadow: 0 10px 28px rgba(99, 102, 241, 0.1);
+        backdrop-filter: blur(18px);
+      }
+
+      .gradient-text {
+        background: linear-gradient(90deg, #6d28d9, #4f46e5, #0ea5e9);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .soft-gradient-section {
+        background: linear-gradient(
+          135deg,
+          #f7f3ff 0%,
+          #eef6ff 48%,
+          #ffffff 100%
+        );
+      }
+
+      .industry-scroll {
+        overflow: hidden;
+      }
+
+      .industry-track {
+        display: flex;
+        gap: 1rem;
+        animation: scroll-cards 32s linear infinite;
+        will-change: transform;
+      }
+
+      .industry-card {
+        min-width: 280px;
+        flex: 0 0 auto;
+      }
+
+      .industry-card img {
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      @keyframes scroll-cards {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .wire-line {
+        position: absolute;
+        left: 2rem;
+        top: 2.5rem;
+        bottom: 2.5rem;
+        width: 3px;
+        background: linear-gradient(
+          to bottom,
+          rgba(99, 102, 241, 0.1),
+          rgba(99, 102, 241, 0.8),
+          rgba(99, 102, 241, 0.1)
+        );
+        box-shadow: 0 0 24px rgba(99, 102, 241, 0.08);
+      }
+
+      .wire-point {
+        position: relative;
+        z-index: 10;
+      }
+
+      .wire-point::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 1.05rem;
+        height: 1.05rem;
+        border-radius: 9999px;
+        border: 3px solid #7c3aed;
+        background: #ffffff;
+        box-shadow: 0 0 0 8px rgba(124, 58, 237, 0.08);
+        animation: pulse-wire 2.4s ease-in-out infinite;
+      }
+
+      @keyframes pulse-wire {
+        0%,
+        100% {
+          transform: translate(-50%, -50%) scale(1);
+          opacity: 1;
+        }
+
+        50% {
+          transform: translate(-50%, -50%) scale(1.18);
+          opacity: 0.7;
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    class="soft-gradient-section font-body-md text-on-background selection:bg-primary-fixed selection:text-primary"
+  >
+    <!-- TopNavBar -->
+    <nav id="site-nav" class="fixed top-0 left-0 right-0 z-50 px-4 pt-6">
+      <div
+        class="glass-nav mx-auto flex min-h-16 w-full max-w-6xl items-center justify-between gap-4 rounded-full px-4 py-3 lg:px-5"
+      >
+        <a
+          class="flex items-center gap-3 rounded-full pr-2"
+          href="#"
+          aria-label="Boscosoft home"
+        >
+          <span
+            class="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white shadow-sm ring-1 ring-violet-100"
+          >
+            <img
+              class="h-8 w-8 object-contain"
+              src="assets/bosco-logo.png"
+              alt=""
+            />
+          </span>
+          <span
+            class="font-headline-lg text-lg font-extrabold tracking-tight text-slate-950"
+            >Boscosoft</span
+          >
+        </a>
+        <div class="hidden items-center gap-2 lg:flex">
+          <a
+            class="rounded-full px-4 py-2 font-manrope text-sm font-semibold tracking-tight text-slate-700 transition-all hover:bg-white/70 hover:text-violet-800"
+            href="index.html"
+                >Home</a
+          >
+          <a
+            class="rounded-full px-4 py-2 font-manrope text-sm font-semibold tracking-tight text-slate-700 transition-all hover:bg-white/70 hover:text-violet-800"
+            href="about.html"
+                >About Us</a
+          >
+          <div class="mega-shell relative">
+            <a
+              class="inline-flex items-center gap-2 rounded-full px-4 py-2 font-manrope text-sm font-semibold tracking-tight text-slate-700 transition-all hover:bg-white/70 hover:text-violet-800"
+              href="services.html">
+              Services
+              <i class="fa-solid fa-chevron-down text-[10px]"></i>
+            </a>
+            <div
+              class="mega-menu glass-mega-menu invisible pointer-events-none absolute top-12 z-50 grid grid-cols-[1.05fr_1.45fr] gap-6 rounded-[28px] p-5 opacity-0 transition-all duration-500 ease-out translate-y-3"
+            >
+              <div
+                class="relative overflow-hidden rounded-[22px] bg-gradient-to-br from-violet-600 to-sky-400 p-6 text-white"
+              >
+                <img
+                  class="absolute inset-0 h-full w-full object-cover opacity-25 mix-blend-screen"
+                  src="assets/dash01.jpg"
+                  alt=""
+                />
+                <div class="relative z-10">
+                  <p
+                    class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-white/70"
+                  >
+                    Dynamics 365
+                  </p>
+                  <h3 class="mb-3 font-headline-lg text-2xl font-extrabold">
+                    CRM services built around your process.
+                  </h3>
+                  <p class="text-sm leading-6 text-white/80">
+                    Plan, implement, automate, and scale with a clean Microsoft
+                    ecosystem.
+                  </p>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                <a
+                  class="group flex gap-3 rounded-2xl p-3 transition hover:bg-white/75"
+                  href="services.html"
+                >
+                  <span
+                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-violet-100 text-violet-700"
+                    ><i class="fa-solid fa-layer-group"></i
+                  ></span>
+                  <span
+                    ><span class="block font-bold text-slate-900"
+                      >Implementation</span
+                    ><span class="text-sm text-slate-500"
+                      >CRM setup and rollout</span
+                    ></span
+                  >
+                </a>
+                <a
+                  class="group flex gap-3 rounded-2xl p-3 transition hover:bg-white/75"
+                  href="services.html"
+                >
+                  <span
+                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-700"
+                    ><i class="fa-solid fa-wand-magic-sparkles"></i
+                  ></span>
+                  <span
+                    ><span class="block font-bold text-slate-900"
+                      >Automation</span
+                    ><span class="text-sm text-slate-500"
+                      >Low-code workflow design</span
+                    ></span
+                  >
+                </a>
+                <a
+                  class="group flex gap-3 rounded-2xl p-3 transition hover:bg-white/75"
+                  href="services.html"
+                >
+                  <span
+                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-indigo-100 text-indigo-700"
+                    ><i class="fa-solid fa-chart-line"></i
+                  ></span>
+                  <span
+                    ><span class="block font-bold text-slate-900"
+                      >Analytics</span
+                    ><span class="text-sm text-slate-500"
+                      >Dashboards and insights</span
+                    ></span
+                  >
+                </a>
+                <a
+                  class="group flex gap-3 rounded-2xl p-3 transition hover:bg-white/75"
+                  href="services.html"
+                >
+                  <span
+                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-fuchsia-100 text-fuchsia-700"
+                    ><i class="fa-solid fa-plug"></i
+                  ></span>
+                  <span
+                    ><span class="block font-bold text-slate-900"
+                      >Integrations</span
+                    ><span class="text-sm text-slate-500"
+                      >ERP, data, and apps</span
+                    ></span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mega-shell relative">
+            <a
+              class="inline-flex items-center gap-2 rounded-full px-4 py-2 font-manrope text-sm font-semibold tracking-tight text-slate-700 transition-all hover:bg-white/70 hover:text-violet-800"
+              href="industries.html">
+              Industries
+              <i class="fa-solid fa-chevron-down text-[10px]"></i>
+            </a>
+            <div
+              class="mega-menu glass-mega-menu invisible pointer-events-none absolute top-12 z-50 grid grid-cols-[1fr_1.5fr] gap-6 rounded-[28px] p-5 opacity-0 transition-all duration-500 ease-out translate-y-3"
+            >
+              <div
+                class="relative overflow-hidden rounded-[22px] bg-slate-950 p-6 text-white"
+              >
+                <img
+                  class="absolute inset-0 h-full w-full object-cover opacity-45"
+                  src="assets/dash02.jpg"
+                  alt=""
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-br from-slate-950/80 to-violet-900/40"
+                ></div>
+                <div class="relative z-10">
+                  <p
+                    class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-white/70"
+                  >
+                    Vertical Solutions
+                  </p>
+                  <h3 class="font-headline-lg text-2xl font-extrabold">
+                    Industry-ready CRM experiences.
+                  </h3>
+                </div>
+              </div>
+              <div class="grid grid-cols-3 gap-3">
+                <a
+                  class="rounded-2xl bg-white/50 p-4 text-center font-semibold text-slate-800 transition hover:-translate-y-1 hover:bg-white"
+                  href="industries.html"
+                  ><i
+                    class="fa-solid fa-heart-pulse mb-2 block text-violet-700"
+                  ></i
+                  >Healthcare</a
+                >
+                <a
+                  class="rounded-2xl bg-white/50 p-4 text-center font-semibold text-slate-800 transition hover:-translate-y-1 hover:bg-white"
+                  href="industries.html"
+                  ><i
+                    class="fa-solid fa-graduation-cap mb-2 block text-violet-700"
+                  ></i
+                  >Education</a
+                >
+                <a
+                  class="rounded-2xl bg-white/50 p-4 text-center font-semibold text-slate-800 transition hover:-translate-y-1 hover:bg-white"
+                  href="industries.html"
+                  ><i
+                    class="fa-solid fa-cart-shopping mb-2 block text-violet-700"
+                  ></i
+                  >Retail</a
+                >
+                <a
+                  class="rounded-2xl bg-white/50 p-4 text-center font-semibold text-slate-800 transition hover:-translate-y-1 hover:bg-white"
+                  href="industries.html"
+                  ><i
+                    class="fa-solid fa-building-columns mb-2 block text-violet-700"
+                  ></i
+                  >BFSI</a
+                >
+                <a
+                  class="rounded-2xl bg-white/50 p-4 text-center font-semibold text-slate-800 transition hover:-translate-y-1 hover:bg-white"
+                  href="industries.html"
+                  ><i
+                    class="fa-solid fa-industry mb-2 block text-violet-700"
+                  ></i
+                  >Manufacturing</a
+                >
+                <a
+                  class="rounded-2xl bg-white/50 p-4 text-center font-semibold text-slate-800 transition hover:-translate-y-1 hover:bg-white"
+                  href="industries.html"
+                  ><i
+                    class="fa-solid fa-truck-fast mb-2 block text-violet-700"
+                  ></i
+                  >Logistics</a
+                >
+              </div>
+            </div>
+          </div>
+          <a
+            class="rounded-full px-4 py-2 font-manrope text-sm font-semibold tracking-tight text-slate-700 transition-all hover:bg-white/70 hover:text-violet-800"
+            href="contact.html"
+                >Contact</a
+          >
+        </div>
+        <button
+          class="hidden rounded-full bg-gradient-to-b from-[#6f4dcc] to-[#56329f] px-6 py-3 font-manrope text-sm font-bold tracking-tight text-white shadow-lg shadow-violet-900/25 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl active:scale-95 lg:inline-flex"
+        >
+          Request a Demo
+        </button>
+        <button
+          id="nav-toggle"
+          class="lg:hidden flex h-11 w-11 items-center justify-center rounded-full bg-white/70 text-slate-800 shadow-md transition hover:bg-white"
+          aria-label="Open navigation menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-menu" class="fixed inset-0 z-[60] hidden">
+      <div
+        id="mobile-backdrop"
+        class="absolute inset-0 bg-slate-900/30 backdrop-blur-sm"
+      ></div>
+      <div class="relative mx-4 mt-24 rounded-3xl glass-mega-menu p-6">
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center gap-3 text-lg font-bold text-slate-900">
+            <img
+              class="h-9 w-9 rounded-full bg-white object-contain p-1"
+              src="assets/bosco-logo.png"
+              alt=""
+            />
+            Boscosoft
+          </div>
+          <button
+            id="mobile-close"
+            class="p-3 rounded-full bg-blue-100 text-blue-600"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <nav class="max-h-[calc(100vh-150px)] space-y-3 overflow-y-auto pr-1">
+          <a
+            class="block text-base font-semibold text-slate-900 hover:text-violet-700"
+            href="index.html"
+                >Home</a
+          >
+          <a
+            class="block text-base font-semibold text-slate-900 hover:text-violet-700"
+            href="about.html"
+                >About Us</a
+          >
+          <details class="group rounded-2xl bg-white/45 p-3">
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between text-base font-semibold text-slate-900"
+            >
+              Services
+              <i
+                class="fa-solid fa-chevron-down text-xs text-violet-700 transition group-open:rotate-180"
+              ></i>
+            </summary>
+            <div class="mt-4 grid gap-3">
+              <a
+                class="flex items-center gap-3 rounded-xl bg-white/70 p-3 text-sm font-semibold text-slate-800"
+                href="services.html"
+              >
+                <span
+                  class="flex h-9 w-9 items-center justify-center rounded-full bg-violet-100 text-violet-700"
+                  ><i class="fa-solid fa-layer-group"></i
+                ></span>
+                Implementation
+              </a>
+              <a
+                class="flex items-center gap-3 rounded-xl bg-white/70 p-3 text-sm font-semibold text-slate-800"
+                href="services.html"
+              >
+                <span
+                  class="flex h-9 w-9 items-center justify-center rounded-full bg-sky-100 text-sky-700"
+                  ><i class="fa-solid fa-wand-magic-sparkles"></i
+                ></span>
+                Automation
+              </a>
+              <a
+                class="flex items-center gap-3 rounded-xl bg-white/70 p-3 text-sm font-semibold text-slate-800"
+                href="services.html"
+              >
+                <span
+                  class="flex h-9 w-9 items-center justify-center rounded-full bg-indigo-100 text-indigo-700"
+                  ><i class="fa-solid fa-chart-line"></i
+                ></span>
+                Analytics
+              </a>
+              <a
+                class="flex items-center gap-3 rounded-xl bg-white/70 p-3 text-sm font-semibold text-slate-800"
+                href="services.html"
+              >
+                <span
+                  class="flex h-9 w-9 items-center justify-center rounded-full bg-fuchsia-100 text-fuchsia-700"
+                  ><i class="fa-solid fa-plug"></i
+                ></span>
+                Integrations
+              </a>
+            </div>
+          </details>
+          <details class="group rounded-2xl bg-white/45 p-3">
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between text-base font-semibold text-slate-900"
+            >
+              Industries
+              <i
+                class="fa-solid fa-chevron-down text-xs text-violet-700 transition group-open:rotate-180"
+              ></i>
+            </summary>
+            <div class="mt-4 grid grid-cols-2 gap-3">
+              <a
+                class="rounded-xl bg-white/70 p-3 text-center text-sm font-semibold text-slate-800"
+                href="industries.html"
+                ><i
+                  class="fa-solid fa-heart-pulse mb-2 block text-violet-700"
+                ></i
+                >Healthcare</a
+              >
+              <a
+                class="rounded-xl bg-white/70 p-3 text-center text-sm font-semibold text-slate-800"
+                href="industries.html"
+                ><i
+                  class="fa-solid fa-graduation-cap mb-2 block text-violet-700"
+                ></i
+                >Education</a
+              >
+              <a
+                class="rounded-xl bg-white/70 p-3 text-center text-sm font-semibold text-slate-800"
+                href="industries.html"
+                ><i
+                  class="fa-solid fa-cart-shopping mb-2 block text-violet-700"
+                ></i
+                >Retail</a
+              >
+              <a
+                class="rounded-xl bg-white/70 p-3 text-center text-sm font-semibold text-slate-800"
+                href="industries.html"
+                ><i
+                  class="fa-solid fa-building-columns mb-2 block text-violet-700"
+                ></i
+                >BFSI</a
+              >
+            </div>
+          </details>
+          <a
+            class="block text-base font-semibold text-slate-900 hover:text-violet-700"
+            href="contact.html"
+                >Contact</a
+          >
+          <button
+            class="mt-3 w-full rounded-full bg-gradient-to-b from-[#6f4dcc] to-[#56329f] px-6 py-3 font-manrope text-sm font-bold tracking-tight text-white shadow-lg shadow-violet-900/25"
+          >
+            Request a Demo
+          </button>
+        </nav>
+      </div>
+    </div>
+
+    <main>
