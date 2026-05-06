@@ -1,0 +1,99 @@
+
+
+      <section class="soft-gradient-section relative overflow-hidden pt-32 pb-20">
+        <div class="hero-grid absolute inset-0"></div>
+        <div class="relative z-10 max-w-5xl mx-auto px-8 text-center" data-aos="fade-up">
+          <div class="eyebrow-pill mb-6">
+            <span class="material-symbols-outlined text-sm text-violet-700">domain</span>
+            <span class="text-label-md font-semibold text-slate-700">Industries</span>
+          </div>
+          <h1 class="font-display-xl text-3xl sm:text-4xl lg:text-5xl font-black text-slate-950 mb-6">Industry-Focused <span class="gradient-text">Dynamics 365 Solutions</span></h1>
+          <p class="text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto mb-4">
+            Boscosoft helps organizations across diverse industries implement Microsoft Dynamics 365 solutions tailored to their unique workflows, customer journeys, and growth ambitions.
+          </p>
+          <p class="text-lg text-slate-500 leading-relaxed max-w-3xl mx-auto">
+            We don’t just deploy technology—we align CRM with how your industry operates, helping you achieve better execution, data clarity, cost efficiency, and long-term growth.
+          </p>
+        </div>
+      </section>
+
+      <section class="py-20 bg-white relative z-10">
+        <div class="max-w-7xl mx-auto px-8">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="glass-card rounded-[24px] p-8 border-none bg-gradient-to-br from-slate-50 to-white shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up">
+              <i class="fa-solid fa-heart-pulse text-3xl text-rose-500 mb-4"></i>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Healthcare & Life Sciences</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Improve patient engagement, streamline operations, and ensure data-driven care delivery with secure, compliant CRM solutions.</p>
+            </div>
+
+            <div class="glass-card rounded-[24px] p-8 border-none bg-gradient-to-br from-slate-50 to-white shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+              <i class="fa-solid fa-graduation-cap text-3xl text-sky-500 mb-4"></i>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Education & EdTech</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Manage student lifecycle, admissions, engagement, and alumni relationships with a connected and personalized CRM experience.</p>
+            </div>
+
+            <div class="glass-card rounded-[24px] p-8 border-none bg-gradient-to-br from-slate-50 to-white shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+              <i class="fa-solid fa-hands-holding-circle text-3xl text-emerald-500 mb-4"></i>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Nonprofits & NGOs</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Drive impact with better donor management, fundraising efficiency, and transparent reporting—all while reducing operational costs.</p>
+            </div>
+
+            <div class="glass-card rounded-[24px] p-8 border-none bg-gradient-to-br from-slate-50 to-white shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up">
+              <i class="fa-solid fa-scale-balanced text-3xl text-indigo-500 mb-4"></i>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Professional Services</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Enhance client relationships, project tracking, and resource utilization with a CRM built for service excellence in Consulting, Legal, and Accounting.</p>
+            </div>
+
+            <div class="glass-card rounded-[24px] p-8 border-none bg-gradient-to-br from-slate-50 to-white shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+              <i class="fa-solid fa-industry text-3xl text-amber-500 mb-4"></i>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Manufacturing</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Connect sales, operations, and customer service to improve demand forecasting, dealer management, and after-sales support.</p>
+            </div>
+
+            <div class="glass-card rounded-[24px] p-8 border-none bg-gradient-to-br from-slate-50 to-white shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+              <i class="fa-solid fa-store text-3xl text-violet-500 mb-4"></i>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Retail & E-commerce</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Deliver personalized customer experiences, manage omnichannel interactions, and increase customer loyalty and lifetime value.</p>
+            </div>
+
+            <div class="glass-card rounded-[24px] p-8 border-none bg-gradient-to-br from-slate-50 to-white shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up">
+              <i class="fa-solid fa-building-columns text-3xl text-blue-500 mb-4"></i>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Banking, Financial Services & Insurance</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Strengthen customer relationships, improve compliance, and enable data-driven financial decision-making with a secure CRM platform.</p>
+            </div>
+
+            <div class="glass-card rounded-[24px] p-8 border-none bg-gradient-to-br from-slate-50 to-white shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+              <i class="fa-solid fa-helmet-safety text-3xl text-orange-500 mb-4"></i>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Real Estate & Construction</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Track leads, manage property sales pipelines, and improve customer communication across multiple projects and locations.</p>
+            </div>
+
+            <div class="glass-card rounded-[24px] p-8 border-none bg-gradient-to-br from-slate-50 to-white shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+              <i class="fa-solid fa-plane-departure text-3xl text-cyan-500 mb-4"></i>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Travel, Hospitality & Leisure</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Create memorable customer experiences with personalized engagement, booking insights, and service excellence.</p>
+            </div>
+            
+            <div class="glass-card rounded-[24px] p-8 border-none bg-gradient-to-br from-slate-50 to-white shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up">
+              <i class="fa-solid fa-microchip text-3xl text-purple-500 mb-4"></i>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Technology & SaaS</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Accelerate growth with scalable CRM systems that support subscription models, customer success, and data-driven sales.</p>
+            </div>
+
+            <div class="glass-card rounded-[24px] p-8 border-none bg-gradient-to-br from-slate-50 to-white shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+              <i class="fa-solid fa-chart-line text-3xl text-emerald-500 mb-4"></i>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Sales-Driven Organizations</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Empower sales teams with real-time insights, pipeline visibility, and automation to close deals faster and more efficiently.</p>
+            </div>
+
+            <div class="glass-card rounded-[24px] p-8 border-none bg-gradient-to-br from-slate-50 to-white shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+              <i class="fa-solid fa-headset text-3xl text-sky-500 mb-4"></i>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Customer Service & Contact Centers</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Deliver faster resolutions, improve agent productivity, and create happy customer experiences with unified service tools.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+

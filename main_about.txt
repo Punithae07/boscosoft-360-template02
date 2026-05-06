@@ -1,0 +1,114 @@
+
+
+      <!-- Hero Banner -->
+      <section class="soft-gradient-section relative overflow-hidden pt-32 pb-20">
+        <div class="hero-grid absolute inset-0"></div>
+        <div class="absolute left-1/2 top-28 h-72 w-72 -translate-x-1/2 rounded-full bg-violet-300/30 blur-3xl"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-8 text-center" data-aos="fade-up">
+          <div class="eyebrow-pill mb-6">
+            <span class="material-symbols-outlined text-sm text-violet-700">info</span>
+            <span class="text-label-md font-semibold text-slate-700">About Us</span>
+          </div>
+          <h1 class="font-display-xl text-3xl sm:text-4xl lg:text-5xl font-black text-slate-950 mb-6">About Boscosoft <span class="gradient-text">Dynamics 365 Services</span></h1>
+        </div>
+      </section>
+
+      <!-- Main Content -->
+      <section class="py-20 bg-white relative z-10">
+        <div class="max-w-7xl mx-auto px-8">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-6" data-aos="fade-right">
+              <h2 class="font-headline-md text-3xl font-bold text-slate-950">Who We Are</h2>
+              <p class="text-body-lg text-slate-600 leading-relaxed">
+                Boscosoft Technologies Pvt. Ltd. is a technology-driven company committed to helping businesses improve performance through digital solutions, business applications, and process transformation.
+              </p>
+              <p class="text-body-md text-slate-600 leading-relaxed">
+                Our Dynamics 365 practice is focused on helping organizations use Microsoft technologies to modernize operations, strengthen customer engagement, and improve business visibility. We combine business understanding with technical expertise to design and deliver solutions that are tailored, practical, and scalable.
+              </p>
+              <p class="text-body-md text-slate-600 leading-relaxed">
+                We work with clients to align Dynamics 365 with real business needs, whether that means improving sales processes, building service workflows, automating communications, creating reporting dashboards, or integrating systems into one connected platform.
+              </p>
+              <div class="border-l-4 border-violet-600 pl-6 py-4 bg-violet-50 rounded-r-xl">
+                <p class="text-body-md text-slate-800 font-semibold leading-relaxed">
+                  Our approach is consultative, structured, and outcome-oriented. We believe technology should not add complexity. It should simplify work, improve control, and create measurable value.
+                </p>
+              </div>
+            </div>
+            <div class="grid gap-6" data-aos="fade-left">
+              <div class="glass-card rounded-[32px] p-8 shadow-xl bg-gradient-to-br from-violet-50 to-white border border-violet-100 relative overflow-hidden group">
+                <div class="absolute right-0 top-0 w-32 h-32 bg-violet-200/50 rounded-full blur-3xl -mr-10 -mt-10 transition-transform group-hover:scale-150 duration-700"></div>
+                <div class="relative z-10">
+                  <div class="flex items-center gap-4 mb-6">
+                    <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-violet-600 text-white shadow-lg shadow-violet-600/30">
+                      <i class="fa-solid fa-bullseye text-2xl"></i>
+                    </span>
+                    <h3 class="font-headline-md text-2xl font-bold text-slate-950">Our Mission</h3>
+                  </div>
+                  <p class="text-slate-600 text-lg">To help businesses unlock the full value of Microsoft Dynamics 365 through strategic implementation, intelligent customization, and reliable support.</p>
+                </div>
+              </div>
+              <div class="glass-card rounded-[32px] p-8 shadow-xl bg-gradient-to-br from-sky-50 to-white border border-sky-100 relative overflow-hidden group">
+                <div class="absolute right-0 top-0 w-32 h-32 bg-sky-200/50 rounded-full blur-3xl -mr-10 -mt-10 transition-transform group-hover:scale-150 duration-700"></div>
+                <div class="relative z-10">
+                  <div class="flex items-center gap-4 mb-6">
+                    <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-500 text-white shadow-lg shadow-sky-500/30">
+                      <i class="fa-solid fa-eye text-2xl"></i>
+                    </span>
+                    <h3 class="font-headline-md text-2xl font-bold text-slate-950">Our Vision</h3>
+                  </div>
+                  <p class="text-slate-600 text-lg">To be a trusted digital transformation partner for organizations seeking connected, data-driven, and future-ready business operations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Strengths -->
+      <section class="py-24 bg-slate-50 relative border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-8">
+          <div class="text-center mb-16 max-w-2xl mx-auto" data-aos="fade-up">
+            <h2 class="font-headline-md text-4xl font-bold text-slate-950 mb-4">Our Strengths</h2>
+            <p class="text-body-lg text-slate-500">What we bring to every Dynamics 365 engagement</p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Strength Items -->
+            <div class="bg-gradient-to-br from-white to-violet-50/80 rounded-[24px] p-8 shadow-lg border border-violet-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
+              <div class="h-12 w-12 rounded-xl bg-violet-100 text-violet-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-diagram-project text-xl"></i>
+              </div>
+              <h4 class="font-bold text-lg text-slate-900 mb-3">Process Transformation</h4>
+              <p class="text-slate-600 leading-relaxed">Clear understanding of business process transformation.</p>
+            </div>
+            <div class="bg-gradient-to-br from-white to-violet-50/80 rounded-[24px] p-8 shadow-lg border border-violet-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="200">
+              <div class="h-12 w-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <i class="fa-brands fa-microsoft text-xl"></i>
+              </div>
+              <h4 class="font-bold text-lg text-slate-900 mb-3">Ecosystem Expertise</h4>
+              <p class="text-slate-600 leading-relaxed">Expertise in Microsoft business applications and ecosystem tools.</p>
+            </div>
+            <div class="bg-gradient-to-br from-white to-violet-50/80 rounded-[24px] p-8 shadow-lg border border-violet-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="300">
+              <div class="h-12 w-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-users text-xl"></i>
+              </div>
+              <h4 class="font-bold text-lg text-slate-900 mb-3">Usability & Adoption</h4>
+              <p class="text-slate-600 leading-relaxed">Focus on solution usability and adoption.</p>
+            </div>
+            <div class="bg-gradient-to-br from-white to-violet-50/80 rounded-[24px] p-8 shadow-lg border border-violet-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="400">
+              <div class="h-12 w-12 rounded-xl bg-fuchsia-100 text-fuchsia-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-truck-fast text-xl"></i>
+              </div>
+              <h4 class="font-bold text-lg text-slate-900 mb-3">Delivery Discipline</h4>
+              <p class="text-slate-600 leading-relaxed">Strong delivery discipline from planning to post-launch support.</p>
+            </div>
+            <div class="bg-gradient-to-br from-white to-violet-50/80 rounded-[24px] p-8 shadow-lg border border-violet-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="500">
+              <div class="h-12 w-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-handshake text-xl"></i>
+              </div>
+              <h4 class="font-bold text-lg text-slate-900 mb-3">Long-term Commitment</h4>
+              <p class="text-slate-600 leading-relaxed">Commitment to long-term client success.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
