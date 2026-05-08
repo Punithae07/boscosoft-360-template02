@@ -37,7 +37,7 @@ trust_section = '''
               >
             </h2>
             <p class="text-slate-300 max-w-2xl mx-auto text-lg leading-relaxed">
-              When you partner with Bosco Soft for Dynamics 365, you get a team focused on clarity, quality, usability, and long-term business success.
+              When you partner with Boscosoftfor Dynamics 365, you get a team focused on clarity, quality, usability, and long-term business success.
             </p>
           </div>
           
@@ -88,7 +88,7 @@ content = re.sub(pattern, trust_section + '\n      <!-- Final CTA -->', content,
 # Update Final CTA
 content = content.replace('Ready to make\n              <span\n                class="text-transparent bg-clip-text bg-gradient-to-r from-violet-300 to-sky-300"\n                >Dynamics 365</span\n              >\n              work for your business?', 'Ready to Make Dynamics 365 Work for Your Business?')
 
-content = content.replace('Schedule a personalized demo or consultation with our experts\n              today and start your journey towards intelligent growth.', 'Whether you are planning a new CRM implementation, improving your current Dynamics 365 setup, or building a connected Microsoft business platform, Bosco Soft Technologies is ready to help.<br/><br/>Let us help you turn Dynamics 365 into a scalable, intelligent, and business-ready platform that supports your teams, customers, and growth goals.')
+content = content.replace('Schedule a personalized demo or consultation with our experts\n              today and start your journey towards intelligent growth.', 'Whether you are planning a new CRM implementation, improving your current Dynamics 365 setup, or building a connected Microsoft business platform, BoscosoftTechnologies is ready to help.<br/><br/>Let us help you turn Dynamics 365 into a scalable, intelligent, and business-ready platform that supports your teams, customers, and growth goals.')
 
 content = content.replace('Request a Demo\n              </button>', 'Book a Consultation\n              </button>')
 content = content.replace('Contact Sales\n              </button>', 'Contact Us Today\n              </button>')

@@ -6,7 +6,7 @@ with open('c:/Users/SANJI BI/OneDrive/Documents/ssp/boscosoft-360/template2/inde
 # 1. Services Snapshot Section
 content = content.replace('Key Services Snapshot', 'Our Dynamics 365 Services')
 content = content.replace('Our Dynamics 365 Services\n            <span class="gradient-text">Our Dynamics 365 Services</span>', 'Our Dynamics 365 Services')
-content = content.replace('Focused capabilities for planning, building, integrating, training, and scaling your Dynamics 365 CRM ecosystem.', 'Bosco Soft provides end-to-end Dynamics 365 services to help businesses plan, implement, customize, integrate, automate, and optimize their CRM and Microsoft business applications.')
+content = content.replace('Focused capabilities for planning, building, integrating, training, and scaling your Dynamics 365 CRM ecosystem.', 'Boscosoftprovides end-to-end Dynamics 365 services to help businesses plan, implement, customize, integrate, automate, and optimize their CRM and Microsoft business applications.')
 
 # Replace Service Card descriptions
 content = content.replace('Strategy, roadmap, process mapping, and CRM advisory for the right\n              implementation path.', 'Make smarter platform decisions with expert guidance on CRM strategy, process mapping, module selection, solution architecture, and implementation planning.')
@@ -42,7 +42,7 @@ if 'Explore Our Services' not in content:
 
 # 2. Industries Section
 content = content.replace('15 Verticals,\n                <span class="gradient-text">One CRM Platform</span>', 'Industry-Focused <span class="gradient-text">Dynamics 365 Solutions</span>')
-content = content.replace('We help businesses across industries implement Dynamics 365\n                solutions that fit their workflows, service models, and growth\n                plans.', 'Every industry has different customer journeys, service models, data needs, compliance expectations, and operational workflows. Bosco Soft helps organizations configure Dynamics 365 around the way their industry works.')
+content = content.replace('We help businesses across industries implement Dynamics 365\n                solutions that fit their workflows, service models, and growth\n                plans.', 'Every industry has different customer journeys, service models, data needs, compliance expectations, and operational workflows. Boscosofthelps organizations configure Dynamics 365 around the way their industry works.')
 
 # I will replace the industries track entirely to contain the 14 industries
 industries_html = '''

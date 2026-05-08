@@ -80,7 +80,7 @@ html = """
                   <strong>Microsoft Dynamics 365 CRM</strong> helps solve these challenges by bringing people, data, processes, and intelligence together in one connected platform.
                 </p>
                 <p class="font-body-lg text-slate-800">
-                  With Bosco Soft as your implementation partner, Dynamics 365 becomes more than a CRM system. It becomes a practical business growth platform designed around your workflows, your users, and your goals.
+                  With Boscosoftas your implementation partner, Dynamics 365 becomes more than a CRM system. It becomes a practical business growth platform designed around your workflows, your users, and your goals.
                 </p>
             </div>
             
@@ -159,13 +159,13 @@ html = """
             
             <div class="mt-10 p-6 bg-slate-900 rounded-2xl text-center\">
                 <p class="text-white font-body-lg\">
-                    When implemented correctly, Dynamics 365 gives leadership better visibility, gives teams better tools, and gives customers a more consistent experience. <strong>Bosco Soft helps you make that possible</strong> through structured consulting, implementation, customization, training, and support.
+                    When implemented correctly, Dynamics 365 gives leadership better visibility, gives teams better tools, and gives customers a more consistent experience. <strong>Boscosofthelps you make that possible</strong> through structured consulting, implementation, customization, training, and support.
                 </p>
             </div>
         </div>
       </section>
 
-      <!-- Why Bosco Soft Section -->
+      <!-- Why BoscosoftSection -->
       <section class="max-w-7xl mx-auto px-8 py-stack-xl mt-10">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div class="relative order-last lg:order-first">
@@ -175,7 +175,7 @@ html = """
               <img
                 class="w-full rounded-[28px] object-cover animate-float"
                 src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1100&q=80"
-                alt="Bosco Soft Technologies team"
+                alt="BoscosoftTechnologies team"
               />
               <div class="mt-6 rounded-[28px] bg-slate-950/95 p-6 text-white shadow-xl">
                 <div class="flex items-center gap-3 text-sky-200 mb-4">
@@ -194,13 +194,13 @@ html = """
               Your Implementation Partner
             </span>
             <h2 class="font-headline-lg text-headline-lg text-slate-950 max-w-2xl">
-              Why Choose Bosco Soft for <span class="gradient-text">Dynamics 365?</span>
+              Why Choose Boscosoftfor <span class="gradient-text">Dynamics 365?</span>
             </h2>
             <p class="font-body-lg text-on-surface-variant max-w-xl">
               Choosing the right Dynamics 365 partner is not just about technical setup. It is about choosing a team that understands business processes, user adoption, solution architecture, data quality, automation, reporting, and long-term platform success.
             </p>
             <p class="font-body-lg text-on-surface-variant max-w-xl mb-6">
-              Bosco Soft Technologies combines Microsoft ecosystem expertise with a practical, business-first implementation approach.
+              BoscosoftTechnologies combines Microsoft ecosystem expertise with a practical, business-first implementation approach.
             </p>
 
             <h3 class="text-xl font-bold text-slate-900 mt-8 mb-4">What Sets Us Apart</h3>

@@ -9,7 +9,7 @@ html_template = """      <section class="soft-gradient-section relative overflow
           </div>
           <h1 class="font-display-xl text-3xl sm:text-4xl lg:text-5xl font-black text-slate-950 mb-6">Industry-Focused <span class="gradient-text">Dynamics 365 CRM Solutions</span></h1>
           <p class="text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto mb-4">
-            Bosco Soft helps organizations across industries implement Dynamics 365 CRM solutions tailored to their workflows, customer journeys, service models, and growth plans.
+            Boscosoft helps organizations across industries implement Dynamics 365 CRM solutions tailored to their workflows, customer journeys, service models, and growth plans.
           </p>
         </div>
       </section>
@@ -19,7 +19,7 @@ html_template = """      <section class="soft-gradient-section relative overflow
         <div class="max-w-4xl mx-auto px-8" data-aos="fade-up">
           <h2 class="font-headline-md text-3xl font-bold text-slate-950 mb-6">CRM Solutions Designed Around the Way Your Industry Works</h2>
           <p class="text-body-lg text-slate-600 mb-4">Every industry has its own challenges. A healthcare organization may need better patient engagement. An education institution may need student lifecycle management. A nonprofit may need donor visibility. A manufacturing company may need dealer coordination and after-sales support. A sales-driven business may need pipeline control and performance reporting.</p>
-          <p class="text-body-lg text-slate-600 mb-4">Bosco Soft helps you configure Dynamics 365 around your industry realities, so your CRM platform supports better execution, clearer data, improved service, and long-term growth.</p>
+          <p class="text-body-lg text-slate-600 mb-4">Boscosoft helps you configure Dynamics 365 around your industry realities, so your CRM platform supports better execution, clearer data, improved service, and long-term growth.</p>
           <p class="text-body-lg text-slate-600">We do not just deploy technology. We align Dynamics 365 with your business model, customer relationships, operational workflows, and reporting needs.</p>
         </div>
       </section>
@@ -37,7 +37,7 @@ html_template = """      <section class="soft-gradient-section relative overflow
         <div class="absolute inset-0 bg-[url('assets/dash02.jpg')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
         <div class="relative z-10 max-w-4xl mx-auto px-8" data-aos="fade-up">
           <h2 class="font-display-xl text-3xl md:text-5xl font-bold text-white mb-6">Need a Dynamics 365 Solution Tailored to Your Industry?</h2>
-          <p class="text-xl text-violet-100 mb-10 max-w-2xl mx-auto">Bosco Soft can help you design and implement a CRM platform that fits your customer journey, team structure, workflows, and growth goals.</p>
+          <p class="text-xl text-violet-100 mb-10 max-w-2xl mx-auto">Boscosoft can help you design and implement a CRM platform that fits your customer journey, team structure, workflows, and growth goals.</p>
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="contact.html" class="rounded-full bg-white px-8 py-4 font-bold text-violet-900 shadow-lg transition hover:-translate-y-1 hover:shadow-xl w-full sm:w-auto">Book an Industry Consultation</a>
             <a href="contact.html" class="rounded-full border border-violet-200/30 bg-violet-800/30 px-8 py-4 font-bold text-white backdrop-blur-sm transition hover:bg-violet-800/50 w-full sm:w-auto">Talk to Our CRM Experts</a>
@@ -181,12 +181,12 @@ with open('industries.html', 'r', encoding='utf-8') as f:
     html = f.read()
 
 # Replace Title & Meta
-html = re.sub(r'<title>.*?</title>', '<title>Dynamics 365 CRM Solutions by Industry | Bosco Soft Technologies</title>', html, flags=re.DOTALL)
+html = re.sub(r'<title>.*?</title>', '<title>Dynamics 365 CRM Solutions by Industry | Boscosoft Technologies</title>', html, flags=re.DOTALL)
 
 if '<meta name="description"' not in html and '<meta\n      name="description"' not in html:
-    html = html.replace('<title>', '<meta name="description" content="Bosco Soft delivers industry-focused Microsoft Dynamics 365 CRM solutions for healthcare, education, nonprofits, professional services, manufacturing, retail, BFSI, real estate, travel, SaaS, sales teams, contact centers, and process-intensive enterprises."/>\n    <title>')
+    html = html.replace('<title>', '<meta name="description" content="Boscosoft delivers industry-focused Microsoft Dynamics 365 CRM solutions for healthcare, education, nonprofits, professional services, manufacturing, retail, BFSI, real estate, travel, SaaS, sales teams, contact centers, and process-intensive enterprises."/>\n    <title>')
 else:
-    html = re.sub(r'<meta[^>]*name="description"[^>]*>', '<meta name="description" content="Bosco Soft delivers industry-focused Microsoft Dynamics 365 CRM solutions for healthcare, education, nonprofits, professional services, manufacturing, retail, BFSI, real estate, travel, SaaS, sales teams, contact centers, and process-intensive enterprises."/>', html, flags=re.IGNORECASE)
+    html = re.sub(r'<meta[^>]*name="description"[^>]*>', '<meta name="description" content="Boscosoft delivers industry-focused Microsoft Dynamics 365 CRM solutions for healthcare, education, nonprofits, professional services, manufacturing, retail, BFSI, real estate, travel, SaaS, sales teams, contact centers, and process-intensive enterprises."/>', html, flags=re.IGNORECASE)
 
 # Replace <main>
 html = re.sub(r'<main>.*?</main>', f'<main>\n{final_main}\n    </main>', html, flags=re.DOTALL)
